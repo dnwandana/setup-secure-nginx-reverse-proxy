@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Application</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl"
+      crossorigin="anonymous"
+    />
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.min.js"
+      integrity="sha384-nsg8ua9HAw1y0W1btsyWgBklPnCUAFLuTMS2G72MMONqmOymq585AcH49TLBQObG"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body class="container mt-5">
+    <div class="card mx-auto">
+      <div class="card-header h3">App</div>
+      <div class="card-body">
+        <div class="d-flex align-items-center justify-content-between">
+          <div class="card-text">Click button to get request.</div>
+          <button
+            id="getRequest"
+            class="btn btn-outline-primary"
+            type="button"
+            data-bs-toggle="collapse"
+            aria-expanded="false"
+          >
+            Get Request
+          </button>
+        </div>
+        <div class="collapse mt-3" id="collapseData">
+          <div class="card card-body d-grid gap-2">
+            <div>Request ID: <strong id="requestId"></strong></div>
+            <div>Date Requested: <strong id="requestDate"></strong></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <p class="mt-2 text-end">
+      By
+      <a
+        class="text-success"
+        href="//github.com/dnwandana"
+        target="_blank"
+        rel="noopener noreferrer"
+        >Wandana</a
+      >.
+    </p>
+  </body>
+</html>
